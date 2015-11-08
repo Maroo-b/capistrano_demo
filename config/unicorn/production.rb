@@ -11,7 +11,7 @@ worker_processes 8 # update this with your preference
 timeout 30
 preload_app true
 
-listen '/tmp/unicorn.myapp.sock', backlog: 64
+listen '/tmp/unicorn.capistrano_demo.sock', backlog: 64
 
 before_fork do |server, worker|
       Signal.trap 'TERM' do
